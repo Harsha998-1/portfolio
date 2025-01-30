@@ -1,30 +1,112 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* Lighter background for better contrast */
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    color: #333; /* Darker text for readability */
+    transition: all 0.3s ease;
 }
 
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Header */
 header {
-    background: #333;
+    background: #005f73; /* Dark teal background */
     color: white;
     padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+header button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #006d77; /* Slightly lighter teal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #008c9e; /* Hover effect */
+}
+
+/* Section Styles */
 section {
     margin: 20px;
     padding: 20px;
-    background: white;
+    background: #f9f9f9; /* Light background for sections */
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
+section:hover {
+    transform: scale(1.03);
+}
+
+h1, h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+h3 {
+    color: #444;
+}
+
+/* Tech Stack */
+#tech-stack .tech-icons img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#tech-stack .tech-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Contact Section */
 a {
     color: #333;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #0099ff; /* Bright blue hover for links */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005f73; /* Matching footer with header */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header button {
+        padding: 8px;
+    }
+
+    section {
+        margin: 10px;
+    }
 }
