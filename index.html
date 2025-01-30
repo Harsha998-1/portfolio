@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gorantla Chandu Harsha Vardhan Reddy - Portfolio</title>
+    <title>Portfolio - Gorantla Chandu Harsha Vardhan Reddy</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Gorantla Chandu Harsha Vardhan Reddy</h1>
-        <p>Student | Passionate about Electronics and Coding</p>
-        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        <button id="theme-toggle">Toggle Dark Mode</button>
     </header>
-    
+
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a student passionate about electronics and coding. I am currently learning and working on projects involving microcontrollers, IoT, and automation systems. I love building real-world applications and gaining hands-on experience in the field of technology.</p>
+        <p>I'm a student passionate about technology and development.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>HC05 Bluetooth Car</h3>
-            <p>A Bluetooth-controlled car project using the HC05 module and Arduino. It allows for remote control of the car using a mobile phone or Bluetooth device.</p>
-        </div>
-
-        <div class="project">
-            <h3>Smart Baby Monitor</h3>
-            <p>A smart baby monitoring system that uses sensors to detect the baby's movement and sound, sending alerts to the parents' mobile devices for immediate action.</p>
-        </div>
-    </section>
-
-    <section id="tech-stack">
-        <h2>Technologies I Work With</h2>
-        <div class="tech-icons">
-            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
-            <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript">
-            <img src="https://img.icons8.com/ios-filled/50/000000/arduino.png" alt="Arduino">
-            <img src="https://img.icons8.com/ios-filled/50/000000/html-5.png" alt="HTML5">
-            <img src="https://img.icons8.com/ios-filled/50/000000/css3.png" alt="CSS3">
-        </div>
+        <ul>
+            <li>HC05 Bluetooth Car</li>
+            <li>Smart Baby Monitor</li>
+        </ul>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gharshav@gitam.in">gharshav@gitam.in</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/_call_me_captain_18_/" target="_blank">@_call_me_captain_18_</a></p>
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-status"></div>
     </section>
 
     <footer>
-        <p>© 2025 Gorantla Chandu Harsha Vardhan Reddy</p>
+        <p>Follow me on <a href="https://www.instagram.com/_call_me_captain_18_/" target="_blank">Instagram</a></p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

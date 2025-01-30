@@ -75,21 +75,62 @@ h3 {
 }
 
 /* Contact Section */
-a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
+#contact {
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-    color: #0099ff; /* Bright blue hover for links */
+#contact h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+    font-weight: 500;
+    color: #444;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #0099ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #007bb5;
+}
+
+#form-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #005f73; /* Matching footer with header */
+    background-color: #005f73;
     color: white;
     position: fixed;
     width: 100%;
